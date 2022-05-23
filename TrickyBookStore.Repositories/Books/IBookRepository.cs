@@ -1,0 +1,11 @@
+﻿using System.Collections.Generic;
+using TrickyBookStore.Models;
+
+// KeepIt
+namespace TrickyBookStore.Repositories.Books
+{
+    public interface IBookRepository
+    {
+        IList<Book> GetBooks(params long[] ids);
+    }
+}
